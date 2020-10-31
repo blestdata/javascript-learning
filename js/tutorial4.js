@@ -39,3 +39,28 @@
 let name = "Randomname";
 console.log("My name is " + name);
 console.log("And datatype is " + (typeof name));
+
+let marks = 48.7;
+console.log("My marks is " + marks);
+console.log("And datatype is " + (typeof marks));
+
+let isDriver = true;
+console.log("Do I Drive " + isDriver);
+console.log("And Data type is ", (typeof isDriver)) //a space is automatically added when a comma is used, not added on "+""
+
+let nullValue = null;
+console.log("Value of null", nullValue)
+console.log("Type of null is", (typeof nullValue))
+/**
+ * Null returns a object type
+ * object type is for reference data
+ * but null is a primitive data type
+ * so return of null is bogus
+ */
+
+ let undef = undefined;
+ console.log("Value of undefined is " + undef);
+ console.log("Return type of undefined is", typeof undef)
+
+ // Reference Data Types
+ 
