@@ -36,6 +36,6 @@
  * 4. Dates
  */
 
-var name = "Randomname"
-console.log("My name is " + name)
-console.log("And datatype is " + (typeof name))
+let name = "Randomname";
+console.log("My name is " + name);
+console.log("And datatype is " + (typeof name));
