@@ -63,4 +63,33 @@ console.log("Type of null is", (typeof nullValue))
  console.log("Return type of undefined is", typeof undef)
 
  // Reference Data Types
- 
+
+ // Arrays
+ let myArray = [4, 5, true, "football"]
+ console.log("Array Defined is " + myArray);
+ console.log("And datatype is " + (typeof myArray));
+
+ myArray2 = [8, 9, false, "olympics"]
+ console.log("Array undefined is " + myArray2);
+ console.log("And datatype is " + (typeof myArray2));
+ // No change??
+
+ //Object Literals
+ let subjectMarks = {
+     Isle: 80,
+     Roland: 72,
+     "Locked Tower": 88 // if no quotation, SyntaxError: Unexpected Identifier
+ };
+ console.log("Object literal is "+ subjectMarks); // Why the Difference?
+ console.log("Object literal is ", subjectMarks);
+ console.log("And datatype is " + (typeof subjectMarks));
+
+ function functionname() {
+     
+ }
+ console.log("Function is ", functionname);
+ console.log("And datatype is " + (typeof functionname));
+
+ let date = new Date();
+ console.log("Date is ", date);
+ console.log("And datatype is " + (typeof date));
