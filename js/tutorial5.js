@@ -10,9 +10,9 @@ console.log(booleanVar, typeof booleanVar);
 booleanVar = String(booleanVar);
 console.log(booleanVar, typeof booleanVar);
 
-let date = new Date();
+let date1 = new Date();
 console.log(date, typeof date);
-date = String(date);
+date1 = String(date1);
 console.log("String converted", date, typeof date);
 
 let arrayExample = [1, 23, 454, 342531, 2, 4];
@@ -66,12 +66,16 @@ console.log(myStr + myNum, "Number concatenates into string");
 myStr = Number(myStr);
 console.log(myStr + myNum, "Normal addition if string is converted using Number() first");
 
+
+//Iteration
+console.log("<--------------Iteration-------------->");
 arrayExample = [1, 23, 454, 342531, 2, 4]
+//Why does it how iterate through the array values?
 console.log(arrayExample)
 for (val in arrayExample){
     console.log(`Iterator value is: ${val}`)
 }
-//Why does it how iterate through the array values?
+
 
 console.log("Using for(let..of..) instead of for(..in..)");
 for (let val of arrayExample){
@@ -107,3 +111,26 @@ incBy3();
 
 incBy1();
 incBy1();
+
+/**
+ * Prototype linkages--> do they end on primitives? --> no, will end in null
+ */
+//Prototype
+console.log("<--------------Prototype-------------->");
+console.log(arrayExample.__proto__);
+console.log(myVar.__proto__);
+console.log(stringExample.__proto__);
+
+var homework = {
+    topic: "JS"
+};
+
+var otherHomework = Object.create(homework);
+
+console.log(otherHomework.topic);
+
+homework = {
+    topic: "HTML"
+};
+console.log(homework.topic);
+console.log(otherHomework.topic); 
